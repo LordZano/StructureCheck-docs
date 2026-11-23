@@ -23,24 +23,28 @@ The plugin is read-only. A scan never creates, changes, moves or deletes an inst
 
 ## 2. Installation
 
-> **Not yet verified.** The steps below have not been tested with the final build. If something differs on your computer, tell the person who gave you the build.
+Install the plugin from its page on the Roblox Creator Store. Once installed, StructureCheck appears in the **Plugins** tab of Roblox Studio. Only Roblox Studio is needed.
 
-You need the plugin file from the person who gave you this build, named like `StructureCheck-<version>.rbxm`. Only Roblox Studio is needed.
+In the **Plugins** tab, click **StructureCheck** to open or close the window. The window docks on the right the first time.
+
+The **StructureCheck** button in the Plugins tab currently has **no icon**: it looks like an empty button. This is a known limitation of this build, and the button works normally.
+
+Use of StructureCheck is governed by the end user license in the [LICENSE](LICENSE) file.
+
+### Manual installation (advanced)
+
+If you have the plugin as a file named like `StructureCheck-<version>.rbxm`, you can install it by hand:
 
 1. Save the `.rbxm` file somewhere you can find it, for example your Downloads folder.
 2. Open Roblox Studio and open any place.
 3. In the **Plugins** tab, click **Plugins Folder**. A Windows folder opens: it is Studio's local plugins folder. (On Windows it is usually `%LOCALAPPDATA%\Roblox\Plugins`.)
 4. Copy the `.rbxm` file into that folder. Do not put it inside another folder.
 5. Close Roblox Studio completely, then start it again and open a place.
-6. In the **Plugins** tab, click **StructureCheck** to open or close the window. The window docks on the right the first time.
+6. In the **Plugins** tab, click **StructureCheck** to open or close the window.
 
 To update to a new build, close Studio, replace the old `.rbxm` in the same folder with the new one (delete the old file first so that only one copy remains), and restart Studio. To uninstall, close Studio and delete the file.
 
-The **StructureCheck** button in the Plugins tab currently has **no icon**: it looks like an empty button. This is a known limitation of this build, and the button works normally.
-
 If the button does not appear, check that the file is directly in the plugins folder, that only one copy is there, restart Studio, and look in the **Output** window for messages beginning with `[StructureCheck]`.
-
-Use of StructureCheck is governed by the end user license in the [LICENSE](LICENSE) file.
 
 ## 3. Quick start
 
