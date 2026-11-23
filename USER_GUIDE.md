@@ -25,7 +25,7 @@ The plugin is read-only. A scan never creates, changes, moves or deletes an inst
 
 > **Not yet verified.** The steps below have not been tested with the final build. If something differs on your computer, tell the person who gave you the build.
 
-You need the plugin file from the person who gave you this build, named like `StructureCheck-<version>.rbxm`. No development tool (Rojo, VS Code, Git) is required. Only Roblox Studio is needed.
+You need the plugin file from the person who gave you this build, named like `StructureCheck-<version>.rbxm`. Only Roblox Studio is needed.
 
 1. Save the `.rbxm` file somewhere you can find it, for example your Downloads folder.
 2. Open Roblox Studio and open any place.
@@ -185,7 +185,7 @@ The window follows Studio's Dark and Light themes and changes immediately when y
   - 20,000 instances, 5,000 differences: about 1.8 s in total, including creating the 5,004 rows.
   - 20,000 instances, 20,000 differences: about 5.7 s in total. Studio's memory use probably goes above 1 GB (an indicative measurement), and resizing the panel is jerky.
 
-  These values come from a synthetic benchmark (the `bench/` harness of the project, run in Roblox Studio on one machine on 2026-11-18; the raw runs were not archived). They do not replace a test on a real project, and they can differ with the machine and with the structure (large numbers of copies of the same name and class were not measured). With more than a few thousand differences, compare a smaller subset instead: select a more targeted Model or Folder.
+  These values come from a synthetic benchmark (run in Roblox Studio on one machine on 2026-11-18; the raw runs were not archived). They do not replace a test on a real project, and they can differ with the machine and with the structure (large numbers of copies of the same name and class were not measured). With more than a few thousand differences, compare a smaller subset instead: select a more targeted Model or Folder.
 - **Filters.** Hiding or showing a category rebuilds the list; with 3,000 rows it took under about a second on the author's machine (not timed); with larger results it may freeze briefly.
 - **Report size.** Studio does not accept a text of 200,000 characters or more in a text box, so the report is limited to 199,000 bytes. If the full report is larger, it keeps whole targets and whole difference lines, in order, up to that limit, and its last line says how many differences were omitted and, when some targets are not listed at all (even identical ones), how many: `N differences omitted, M targets not listed: the report is limited to 199,000 bytes.` (`1 difference`, `1 target` in the singular; the part about targets is left out when every target is listed). The totals and the number of targets at the top are always complete. To get the rest, compare a more targeted Model or Folder.
 - **No toolbar icon.** The Plugins tab button shows no icon in this build (see [section 2](#2-installation)).
